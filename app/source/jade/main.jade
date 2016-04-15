@@ -8,31 +8,21 @@ html
     meta(name="keywords", content="")
     link(rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon")
     //build:css css/bundle.min.css
-    link(href="bower/normalize-css/normalize.css" rel="stylesheet")
+    link(href="css/lib/normalize.css" rel="stylesheet")
     link(rel="stylesheet", href="bower/select2/dist/css/select2.min.css")
-    link(rel="stylesheet", href="css/lib/jquery-ui.min.css")
     link(rel="stylesheet", href="fonts/stylesheet.css")
     link(rel="stylesheet", href="css/style.css")
     //endbuild
   body
     .wrapper
-        //- mixins
-        include _common/_social
         include _common/_nav
-        //- mixins end
         include _common/_header
-        .wrapper__iner
-            include _common/_bredcrums
-            h2.active-category
-                | Мобильные телефоны
-            include _common/_sidebar
-            include _common/_content
-        include _common/_info
+        .wrapper__inner
+            main.content
+                include _common/_filter
     include _common/_footer
     //build:js js/main.js
     script(src="bower/jquery/dist/jquery.min.js")
-    script(src="js/libs/jquery.columnizer.js")
     script(src="bower/select2/dist/js/select2.min.js")
-    script(src="js/libs/jquery-ui.min.js")
     script(src="js/main.js")
     //endbuild

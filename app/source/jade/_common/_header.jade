@@ -1,0 +1,39 @@
+header.header
+    .wrapper__inner
+        .header-top-block
+            ul.contact
+                li.contact_item
+                    .contact_title
+                        | Visit our office
+                    .contact_info
+                        | 2945 Rinehart Road, Sunrise
+                li.contact_item
+                    .contact_title
+                        | Contact us via phone
+                    .contact_info
+                        | +44 20 7946 0041 3685
+                li.contact_item
+                    .contact_title
+                        | Ask us questions
+                    .contact_info
+                        | info@innosphere.com
+        .container-navigation
+            mixin nav('recent images')
+            ul.social-header
+                - var social = ['fb', 'in', 'be']
+                    each item in social
+                        li.social-header_item
+                            a(href="#" target="_blank" class="socials_link social_link_#{item}")= item
+        .header-text-section
+            h1.title_header
+                | Your beautiful handcrafted stock photography marketplace.
+            .text_header
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis tortor non ipsum condimentum molestie...
+            a(href="#").know-more.pink-button
+                | KNOW MORE
+        .container-search
+            form(method="post")
+                input(type="submit" name="search-submit" value="").search_submit
+                input(type="search" name="search-field" placeholder="SEARCH ALL GALLERIES").search_field
+                
+

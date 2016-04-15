@@ -1,0 +1,6 @@
+mixin nav(active) 
+    ul.navigation
+        - var nav = ['homepage', 'search', 'recent images', 'about', 'tsponsors', 'team', 'contact']
+            each item in nav
+                li.navigation_item
+                    a(href="#" class="navigation_link" + (active == item ? ' navigation__link_active' : ''))= item   

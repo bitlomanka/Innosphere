@@ -1,21 +1,134 @@
 <!DOCTYPE html>
 <html>
 	<head lang="ru">
-		<title>Innosphere</title>
+		<title> Innosphere</title>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<meta name="description" content="">
 		<meta name="keywords" content="">
 		<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
 		<!--build:css css/bundle.min.css-->
-		<link href="bower/normalize-css/normalize.css" rel="stylesheet">
+		<link href="css/lib/normalize.css" rel="stylesheet">
+		<link rel="stylesheet" href="bower/select2/dist/css/select2.min.css">
 		<link rel="stylesheet" href="fonts/stylesheet.css">
 		<link rel="stylesheet" href="css/style.css">
 		<!--endbuild-->
 	</head>
 	<body>
-		
+		<div class="wrapper">
+			<header class="header">
+				<div class="wrapper__inner">
+					<div class="header-top-block">
+						<ul class="contact">
+							<li class="contact_item">
+								<div class="contact_title">Visit our office</div>
+								<div class="contact_info">2945 Rinehart Road, Sunrise</div>
+							</li>
+							<li class="contact_item">
+								<div class="contact_title">Contact us via phone</div>
+								<div class="contact_info">+44 20 7946 0041 3685</div>
+							</li>
+							<li class="contact_item">
+								<div class="contact_title">Ask us questions</div>
+								<div class="contact_info">info@innosphere.com</div>
+							</li>
+						</ul>
+					</div>
+					<div class="container-navigation">
+									<ul class="navigation">
+										<li class="navigation_item"><a href="#" class="navigation_link">homepage</a></li>
+										<li class="navigation_item"><a href="#" class="navigation_link">search</a></li>
+										<li class="navigation_item"><a href="#" class="navigation_link navigation__link_active">recent images</a></li>
+										<li class="navigation_item"><a href="#" class="navigation_link">about</a></li>
+										<li class="navigation_item"><a href="#" class="navigation_link">tsponsors</a></li>
+										<li class="navigation_item"><a href="#" class="navigation_link">team</a></li>
+										<li class="navigation_item"><a href="#" class="navigation_link">contact</a></li>
+									</ul>
+						<ul class="social-header">
+							<li class="social-header_item"><a href="#" target="_blank" class="socials_link social_link_fb">fb</a></li>
+							<li class="social-header_item"><a href="#" target="_blank" class="socials_link social_link_in">in</a></li>
+							<li class="social-header_item"><a href="#" target="_blank" class="socials_link social_link_be">be</a></li>
+						</ul>
+					</div>
+					<div class="header-text-section">
+						<h1 class="title_header">Your beautiful handcrafted stock photography marketplace.</h1>
+						<div class="text_header">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis tortor non ipsum condimentum molestie...</div><a href="#" class="know-more pink-button">KNOW MORE</a>
+					</div>
+					<div class="container-search">
+						<form method="post">
+							<input type="submit" name="search-submit" value="" class="search_submit">
+							<input type="search" name="search-field" placeholder="SEARCH ALL GALLERIES" class="search_field">
+						</form>
+					</div>
+				</div>
+			</header>
+			<div class="wrapper__inner">
+				<main class="content">
+					<form>
+						<ul class="filter-container">
+							<li class="filter_block">
+								<div class="filter_label">Categories</div>
+								<select class="filter_select">
+									<option>Architecture</option>
+									<option>Nature</option>
+								</select>
+								<div class="filter_label">Browse</div>
+								<select class="filter_select">
+									<option>Most Viewed</option>
+									<option>Nature</option>
+								</select>
+							</li>
+							<li class="filter_block">
+								<div class="filter_label">License Type</div>
+								<select class="filter_select">
+									<option>Creative</option>
+									<option>Nature</option>
+								</select>
+								<div class="filter_label">Location</div>
+								<select class="filter_select">
+									<option>Worldwide   </option>
+								</select>
+							</li>
+							<li class="filter_block">
+								<div class="filter_label">Image Size</div>
+								<select class="filter_select">
+									<option>XXXL</option>
+								</select>
+								<div class="filter_label">Adult Content</div>
+								<div class="label_wrapp">
+									<label>
+										<input type="radio" name="Adult Content" checked class="filter__check"><span class="radio">YES</span>
+									</label>
+									<label>
+										<input type="radio" name="Adult Content" class="filter__check"><span class="radio">NO</span>
+									</label>
+								</div>
+							</li>
+							<li class="filter_block">
+								<div class="filter_label">Color</div>
+								<select class="filter_select">
+									<option>HEX     #F6546A</option>
+								</select>
+								<input type="submit" value="START SEARCH" class="pink-button start-search">
+							</li>
+						</ul>
+					</form>
+					<!--    mixin form(items) -->
+					<!--        ul.filter-container-->
+					<!--            each col, i in items-->
+					<!--                li.filter_block-->
+					<!--                    each options, title in col-->
+					<!--                        .filter_label= title-->
+					<!--                        select.filter_select-->
+					<!--                            option= options-->
+					<!--                            -->
+					<!--+ form([{'Categories': ['Architecture', 'Nature'], 'Browse': ['Most Viewed', 'Nature']}, {'License Type': ['Creative', 'Nature2'], 'Worldwide': ['Most Viewed2', 'Nature2']},{'Image Size':['XXXL'], 'Adult Content':['YES', 'NO']},{Color:['HEX #F6546A']}])-->
+				</main>
+			</div>
+		</div>
+		<footer class="footer"></footer>
 		<!--build:js js/main.js-->
 		<script src="bower/jquery/dist/jquery.min.js"></script>
+		<script src="bower/select2/dist/js/select2.min.js"></script>
 		<script src="js/main.js"></script>
 		<!--endbuild-->
 	</body>

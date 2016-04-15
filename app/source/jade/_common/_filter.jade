@@ -1,0 +1,51 @@
+form
+    ul.filter-container
+        li.filter_block
+            .filter_label Categories
+            select.filter_select
+                option Architecture
+                option Nature
+            .filter_label Browse
+            select.filter_select
+                option Most Viewed
+                option Nature
+        li.filter_block
+            .filter_label License Type
+            select.filter_select
+                option Creative
+                option Nature
+            .filter_label Location
+            select.filter_select
+                option Worldwide   
+        li.filter_block
+            .filter_label Image Size
+            select.filter_select
+                option XXXL
+            .filter_label Adult Content
+            - var items = ['YES', 'NO']
+                .label_wrapp
+                    each item, i in items
+                        label
+                            - if (i == 0)
+                                input(type="radio" name="Adult Content" checked).filter__check
+                            - else
+                                input(type="radio" name="Adult Content").filter__check
+                            span.radio= item
+        li.filter_block
+            .filter_label Color
+            select.filter_select
+                option HEX     #F6546A
+            input(type="submit" value="START SEARCH").pink-button.start-search
+                            
+
+
+//    mixin form(items) 
+//        ul.filter-container
+//            each col, i in items
+//                li.filter_block
+//                    each options, title in col
+//                        .filter_label= title
+//                        select.filter_select
+//                            option= options
+//                            
+//+ form([{'Categories': ['Architecture', 'Nature'], 'Browse': ['Most Viewed', 'Nature']}, {'License Type': ['Creative', 'Nature2'], 'Worldwide': ['Most Viewed2', 'Nature2']},{'Image Size':['XXXL'], 'Adult Content':['YES', 'NO']},{Color:['HEX #F6546A']}])
