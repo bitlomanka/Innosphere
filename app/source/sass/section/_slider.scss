@@ -1,0 +1,61 @@
+.container-slider{
+    position: relative;
+    height: 95px;
+    width: 90%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.list-slider{
+    overflow: hidden;
+    width: 2000px;
+    position: relative;
+}
+
+.arrow{
+    width: 31px;
+    height: 31px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin: -15px 0 0 0;
+}
+
+.item-slider{
+    float: left;
+//    width: 20%;
+    width: 180px;
+    height: 95px;
+}
+
+.item-slider1{
+    background: url(../images/slider-item/sl-item1.png) no-repeat center;
+}
+
+.item-slider2{
+    background: url(../images/slider-item/sl-item2.png) no-repeat center;
+}
+
+.item-slider3{
+    background: url(../images/slider-item/sl-item3.png) no-repeat center;
+}
+
+.item-slider4{
+    background: url(../images/slider-item/sl-item4.png) no-repeat center;
+}
+
+.item-slider5{
+    background: url(../images/slider-item/sl-item5.png) no-repeat center;
+}
+
+.arrow-left{
+    background: #9b9a9b url(../images/arrow.png) no-repeat center;
+    left: 0;
+}
+
+.arrow-right{
+    background: #9b9a9b url(../images/arrow.png) no-repeat center;
+    transform: rotate(180deg);
+    right: 0;
+}

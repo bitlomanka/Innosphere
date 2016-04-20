@@ -1,0 +1,33 @@
+.parallax-container{
+    background: rgba(35, 32, 32, 0.6) url(../images/parallax.png) no-repeat center;
+    height: 495px;
+}
+
+.parallax-container{
+    margin: 0 0 100px 0;
+    .wrapper__inner{
+        display: table;
+        .load-more{
+            float: none;
+            margin: 0 auto;
+        }
+    }
+}
+
+.block-text-parallax{
+    color: #fff;
+    text-align: center;
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.title-parallax{
+    font: 50px 'open_sansextrabold';
+    margin: 0 0 50px 0
+}
+
+.text-parallax{
+    font: 18px/35px 'open_sanslight';
+    margin: 0 0 60px 0;
+}
