@@ -1,6 +1,23 @@
 
+var map;
+function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 46.974255, lng: 31.968143},
+    zoom: 17,
+    scrollwheel: false,
+    disableDefaultUI: true,
+    scaleControl: true,
+    });
+    var marker = new google.maps.Marker({
+    position: {lat: 46.974255, lng: 31.968030},
+    map: map,
+    title: 'Hello World!'
+  });
+}
+
 $(document).ready(function(){
     var currentLeftValue = 0;
+    
     
 
     // select2
@@ -41,6 +58,9 @@ $(document).ready(function(){
     }
     
     carousel('.container-slider');
+    
+    // map
+    
 });
 
 
