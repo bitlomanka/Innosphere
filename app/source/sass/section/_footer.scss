@@ -1,6 +1,49 @@
 .footer{
-//    background: #232020;
-    min-height: 100px;
+    background: #232020;
+    box-sizing: border-box;
+    min-height: 346px;
     width: 100%;
-        margin-top: -100px;
+    margin-top: -346px;
+    text-align: center;
+    padding: 135px 0 0 0;
+}
+
+.footer-social-list{
+    @extend %letter-spacing;
+    margin: 0 0 31px -2%;
+}
+
+.footer-social-item{
+    @extend %inline-block;
+    margin: 0 0 0 2%;
+}
+
+.footer-social-link{
+    display: block;
+    height: 40px;
+    width: 40px;
+    background-image: url(../images/social-footer.png);
+    background-repeat: no-repeat;
+    @extend %text-indent;
+}
+
+.footer-social-link-f{
+    background-position: 0 0;
+}
+
+.footer-social-link-t{
+    background-position: -62px 0;
+}
+
+.footer-social-link-i{
+    background-position: -122px 0;
+}
+
+.footer-social-link-v{
+    background-position: -180px 0;
+}
+
+.copy{
+    color: #fff;
+    font: 15px 'open_sanslight';
 }

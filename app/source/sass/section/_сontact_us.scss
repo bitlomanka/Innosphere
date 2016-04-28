@@ -1,0 +1,130 @@
+.container-bottom-contact{
+    @extend %letter-spacing;
+}
+
+.block-contact{
+    @extend %inline-block;
+}
+
+.block-form-contact{
+    width: 62.5%;
+    font: 18px 'open_sanslight';
+}
+
+.block-input{
+    @extend %clearfix;
+}
+
+.container-text-field{
+    width: 48.8%;
+    float: left;
+    margin: 0 0 0 2.3%;
+    &:first-child{
+        margin: 0;
+    }
+}
+
+.input-container{
+    position: relative; 
+}
+
+.text-field{
+    background: #fbfbfb;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 17px;
+    color: #232022;
+    margin: 0 0 11px 0;
+}
+
+.message{
+    box-sizing: border-box;
+    width: 100%;
+    background: #fbfbfb;
+    height: 200px;
+    padding: 15px 18px;
+    border: none;
+    resize: none;
+    margin: 0 0 10px;
+    &:focus{
+        outline: none;
+    }
+}
+
+.submit{
+    width: 29.12%;
+    font-size: 18px;
+}
+
+.address-bottom{
+    width: 31%;
+    margin: 0 0 0 6.5%;
+    
+}
+
+.title-address{
+    font: 25px 'open_sanslight';
+    color: #232020;
+    padding: 0 0 0 40px;
+    background: url(../images/contact/address2.png) no-repeat bottom left;
+    margin: 0 0 31px;
+}
+
+.container-contact-bottom{
+    @extend %letter-spacing;
+    overflow: hidden;
+}
+
+.contact-title-bottom{
+    width: 25.5%;
+    @extend %inline-block;
+    font: 17px 'open_sanssemibold';
+    color: #0b0e11;
+}
+
+.contact-bottom{
+    width: 74.5%;
+    @extend %inline-block;
+    word-wrap: break-word;
+    font: 17px/27px 'open_sanslight';
+    color: #999;
+}
+
+.about-us{
+    margin-top: 34px;
+    background: url(../images/contact/about-us.png) no-repeat center left;
+}
+
+.text-about-us{
+    font: 18px/25px 'open_sanslight';
+    color: #999;
+}
+
+.error{
+    color: red;
+    box-shadow: inset 0 0 0 1px #FF2749;
+}
+
+label.error{
+    position: absolute;
+    bottom: -24px;
+    left: 50%;
+    transform: translate(-50%);
+    font: 14px 'open_sanslight';
+    padding: 5px 10px;
+    background: #FF2749;
+    color: #fff;
+    z-index: 2;
+    white-space: nowrap;
+    &:after{
+        content:'';
+        border-bottom: 7px solid #000;
+        border-right: 7px solid transparent;
+        border-left: 7px solid transparent;
+        position: absolute;
+        margin-left: -7px;
+        top: -7px;
+        left: 50%;
+    }
+}
+

@@ -17,8 +17,6 @@ function initMap() {
 
 $(document).ready(function(){
     var currentLeftValue = 0;
-    
-    
 
     // select2
     $('.filter_select').select2({
@@ -29,6 +27,8 @@ $(document).ready(function(){
     $('.link_presentation_img').hover(function(e){
         $(this).find('.block_description-photo').slideToggle('');
     });
+    
+    
     
     // карусель
     
@@ -59,7 +59,51 @@ $(document).ready(function(){
     
     carousel('.container-slider');
     
-    // map
+    // validate
+    
+    $('.write-us').validate({
+        submitHandler: function(form) {
+            $(form).ajaxSubmit();
+        },
+        rules: {
+            first_user_name:{
+                required: true,
+                minlength: 6
+            },
+            email_user:{
+                required:true,
+                email: true
+            },
+            last_user_name:{
+                required: true,
+                minlength: 4
+            },
+            phone_user_number: {
+                required: true,
+                digits: true
+            },
+            message:'required'
+        },
+        messages:{
+            first_user_name:{
+                required: 'Enter your first name',
+                minlength: 'Name must be at least 4 characters'
+            },
+            email_user:{
+                required:'Enter your e-mail address',
+                email: 'Please enter a valid e-mail address'
+            },
+            last_user_name:{
+                required: 'enter your last name',
+                minlength: 'last name must be at least 4 characters'
+            },
+            phone_user_number: {
+                required: 'Enter your phone number',
+                digits: 'Phone number must contain only digits'
+            },
+            message:'Enter your message'
+        }
+    });
     
 });
 

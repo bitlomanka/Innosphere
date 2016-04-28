@@ -1,0 +1,34 @@
+.wrapper__inner
+    h2.title_content
+        | Get in touch with us
+    .container-bottom-contact
+        .block-contact.block-form-contact
+            form(action="").write-us
+                .block-input
+                    .container-text-field
+                        .input-container
+                            input(type="text", name="first_user_name", placeholder="First name").text-field
+                        .input-container
+                            input(type="text", name="email_user", placeholder="Email").text-field
+                    .container-text-field
+                        .input-container
+                            input(type="text", name="last_user_name", placeholder="Last name").text-field
+                        .input-container
+                            input(type="text", name="phone_user_number", placeholder="Phone number").text-field
+                .input-container
+                    textarea(placeholder="Message", name="message").message
+                input(type="submit", value="SEND MESSAGE",name="submit").submit.pink-button
+        .block-contact.address-bottom
+            .title-address Our address
+            .container-contact-bottom
+                .contact-title-bottom Address: 
+                .contact-bottom 3497 Gateway Road Portland, OR 97217
+            .container-contact-bottom
+                .contact-title-bottom Phone: 
+                .contact-bottom (229) 503-289-9830
+            .container-contact-bottom
+                .contact-title-bottom Email: 
+                .contact-bottom www.mobilecom.com
+            .title-address.about-us About us
+            .text-about-us
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc gravida dapibus sapien.

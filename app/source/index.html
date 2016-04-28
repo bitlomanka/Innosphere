@@ -20,15 +20,15 @@
 					<div class="header-top-block">
 						<ul class="contact">
 							<li class="contact_item">
-								<div class="contact_title">Visit our office</div>
+								<div class="contact_title address-header">Visit our office</div>
 								<div class="contact_info">2945 Rinehart Road, Sunrise</div>
 							</li>
 							<li class="contact_item">
-								<div class="contact_title">Contact us via phone</div>
+								<div class="contact_title phone">Contact us via phone</div>
 								<div class="contact_info">+44 20 7946 0041 3685</div>
 							</li>
 							<li class="contact_item">
-								<div class="contact_title">Ask us questions</div>
+								<div class="contact_title ask">Ask us questions</div>
 								<div class="contact_info">info@innosphere.com</div>
 							</li>
 						</ul>
@@ -63,7 +63,7 @@
 			</header>
 			<main class="content">
 				<div class="wrapper__inner">
-					<form>
+					<form action="">
 						<ul class="filter-container">
 							<li class="filter_block">
 								<div class="filter_label">Categories</div>
@@ -239,12 +239,69 @@
 					</section>
 				</div>
 				<div id="map" class="container-map"></div>
+				<div class="wrapper__inner">
+					<h2 class="title_content">Get in touch with us</h2>
+					<div class="container-bottom-contact">
+						<div class="block-contact block-form-contact">
+							<form action="" class="write-us">
+								<div class="block-input">
+									<div class="container-text-field">
+										<div class="input-container">
+											<input type="text" name="first_user_name" placeholder="First name" class="text-field">
+										</div>
+										<div class="input-container">
+											<input type="text" name="email_user" placeholder="Email" class="text-field">
+										</div>
+									</div>
+									<div class="container-text-field">
+										<div class="input-container">
+											<input type="text" name="last_user_name" placeholder="Last name" class="text-field">
+										</div>
+										<div class="input-container">
+											<input type="text" name="phone_user_number" placeholder="Phone number" class="text-field">
+										</div>
+									</div>
+								</div>
+								<div class="input-container">
+									<textarea placeholder="Message" name="message" class="message"></textarea>
+								</div>
+								<input type="submit" value="SEND MESSAGE" name="submit" class="submit pink-button">
+							</form>
+						</div>
+						<div class="block-contact address-bottom">
+							<div class="title-address">Our address</div>
+							<div class="container-contact-bottom">
+								<div class="contact-title-bottom">Address: </div>
+								<div class="contact-bottom">3497 Gateway Road Portland, OR 97217</div>
+							</div>
+							<div class="container-contact-bottom">
+								<div class="contact-title-bottom">Phone: </div>
+								<div class="contact-bottom">(229) 503-289-9830</div>
+							</div>
+							<div class="container-contact-bottom">
+								<div class="contact-title-bottom">Email: </div>
+								<div class="contact-bottom">www.mobilecom.com</div>
+							</div>
+							<div class="title-address about-us">About us</div>
+							<div class="text-about-us">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc gravida dapibus sapien.</div>
+						</div>
+					</div>
+				</div>
 			</main>
 		</div>
-		<footer class="footer"></footer>
+		<footer class="footer">
+			<ul class="footer-social-list">
+				<li class="footer-social-item"><a href="#" target="_blank" class="footer-social-link-f footer-social-link">f</a></li>
+				<li class="footer-social-item"><a href="#" target="_blank" class="footer-social-link-t footer-social-link">t</a></li>
+				<li class="footer-social-item"><a href="#" target="_blank" class="footer-social-link-i footer-social-link">i</a></li>
+				<li class="footer-social-item"><a href="#" target="_blank" class="footer-social-link-v footer-social-link">v</a></li>
+			</ul>
+			<div class="copy">&copy; 2015 Innosphere - All rights reserved - made by Vid Kraljić Radulović</div>
+		</footer>
 		<!--build:js js/main.js-->
 		<script src="bower/jquery/dist/jquery.min.js"></script>
 		<script src="bower/select2/dist/js/select2.min.js"></script>
+		<script src="bower/jquery-validation/dist/jquery.validate.js"></script>
 		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPxvOGsb1NK8RZnbTTWAELrXdFEeDqBDk&amp;callback=initMap"></script>
 		<script src="js/main.js"></script>
 		<!--endbuild-->

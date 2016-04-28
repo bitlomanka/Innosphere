@@ -18,14 +18,14 @@
 
 .title_content{
     @extend %text-align-center;
-    font: 26px/26px 'open_sanslight';
+    font: 30px/26px 'open_sanslight';
     color: #232020;
-    margin: 0 0 55px;
+    margin: 0 0 62px;
 }
 
 .list_presentation_img{
     @extend %letter-spacing;
-    margin: 0 0 10px -1%;
+    margin: 0 0 5px -1%;
 }
 
 .item_presentation_img{

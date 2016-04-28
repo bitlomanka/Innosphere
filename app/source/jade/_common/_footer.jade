@@ -1,1 +1,8 @@
 footer.footer
+    ul.footer-social-list
+        - var social = ['f', 't', 'i', 'v']
+            each item in social
+                li.footer-social-item
+                    a(href="#" class="footer-social-link-#{item}" target="_blank").footer-social-link= item
+    .copy
+        |&copy; 2015 Innosphere - All rights reserved - made by Vid Kraljić Radulović
