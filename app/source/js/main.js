@@ -105,6 +105,18 @@ $(document).ready(function(){
         }
     });
     
+    // parallax
+    
+    $('.parallax-container[data-type="background"]').each(function(){
+        var bgobj = $(this);
+        
+        $(window).scroll(function(){
+            var xPosition = -($(window).scrollTop() / bgobj.data('speed'));
+            var coord = '50%' + xPosition + 'px';
+            bgobj.css("background-position", coord);
+        });
+    });
+    
 });
 
 

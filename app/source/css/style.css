@@ -483,7 +483,8 @@ label .filter__check:checked + .radio {
 }
 
 .parallax-container {
-  background: rgba(35, 32, 32, 0.6) url(../images/parallax.png) no-repeat center;
+  background: rgba(35, 32, 32, 0.6) url(../images/parallax.png) no-repeat 50% 0 fixed;
+  background-size: cover;
   height: 500px;
 }
 
@@ -816,7 +817,7 @@ label.error {
 }
 label.error:after {
   content: '';
-  border-bottom: 7px solid #000;
+  border-bottom: 7px solid #FF2749;
   border-right: 7px solid transparent;
   border-left: 7px solid transparent;
   position: absolute;
