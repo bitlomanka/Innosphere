@@ -32,32 +32,12 @@ $(document).ready(function(){
     
     // карусель
     
-    function carousel (selector) {
-        var container = $(selector),
-            list = container.find('.list-slider'),
-            items = list.find('.item-slider'),
-            arrows = container.find('.arrow'),
-            elementsCount = items.length,
-            pixelsOffset = items.outerWidth(),
-            minimumOffset = - ((elementsCount - 5) * pixelsOffset),
-            maximumOffset = 0,
-            currentLeftValue = 0;
-
-        arrows.on('click', function(){
-            if ($(this).hasClass('arrow-right')) {
-                if (currentLeftValue != minimumOffset) {
-                    currentLeftValue -= pixelsOffset;
-                }
-            } else {
-                if (currentLeftValue != maximumOffset) {
-                    currentLeftValue += pixelsOffset;
-                }
-            }
-            list.animate({ left : currentLeftValue}, 500);
-        });
-    }
-    
-    carousel('.container-slider');
+    $(".owl-carousel").owlCarousel({
+        items: 5,
+        navigation: true,
+        navigationText: false,
+        slideSpeed: 400
+    });
     
     // validate
     
@@ -107,14 +87,10 @@ $(document).ready(function(){
     
     // parallax
     
-    $('.parallax-container[data-type="background"]').each(function(){
-        var bgobj = $(this);
-        
-        $(window).scroll(function(){
-            var xPosition = -($(window).scrollTop() / bgobj.data('speed'));
-            var coord = '50%' + xPosition + 'px';
-            bgobj.css("background-position", coord);
-        });
+    $('.img-holder').imageScroll({
+        holderMinHeight: 500,
+        holderMaxHeight: 500,
+        speed: 0.4
     });
     
 });

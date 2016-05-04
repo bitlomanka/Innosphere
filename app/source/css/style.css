@@ -61,13 +61,12 @@ html, body {
 }
 
 .wrapper__inner {
-  max-width: 1040px;
-  padding: 0 20px;
+  max-width: 1060px;
+  padding: 0 30px;
   box-sizing: border-box;
   margin: 0 auto;
   position: relative;
   height: 100%;
-  overflow: hidden;
 }
 
 .pink-button {
@@ -85,9 +84,10 @@ html, body {
 }
 
 .header {
-  background: url(../images/header-bg.png) no-repeat center;
+  background: url(../images/header-bg.png) no-repeat;
   height: 785px;
   margin: 0 0 40px 0;
+  background-size: cover;
 }
 
 .header-top-block {
@@ -214,6 +214,7 @@ html, body {
   position: absolute;
   left: 2%;
   bottom: 0;
+  width: 315px;
 }
 
 .search_field {
@@ -222,7 +223,7 @@ html, body {
   padding: 0 30px;
   font: 17px 'open_sanssemibold';
   height: 55px;
-  min-width: 200px;
+  width: 200px;
 }
 
 input[type="search"]::-webkit-input-placeholder {
@@ -483,20 +484,15 @@ label .filter__check:checked + .radio {
 }
 
 .parallax-container {
-  background: rgba(35, 32, 32, 0.6) url(../images/parallax.png) no-repeat 50% 0 fixed;
+  margin: 0 0 100px 0;
   background-size: cover;
-  height: 500px;
 }
 
-.parallax-container {
-  margin: 0 0 100px 0;
+.imageHolder {
+  height: 500px;
 }
-.parallax-container .wrapper__inner {
+.imageHolder .wrapper__inner {
   display: table;
-}
-.parallax-container .wrapper__inner .load-more {
-  float: none;
-  margin: 0 auto;
 }
 
 .block-text-parallax {
@@ -505,6 +501,10 @@ label .filter__check:checked + .radio {
   display: table-cell;
   width: 100%;
   vertical-align: middle;
+}
+.block-text-parallax .load-more {
+  float: none;
+  margin: 0 auto;
 }
 
 .title-parallax {
@@ -562,13 +562,12 @@ label .filter__check:checked + .radio {
   transform: translate(-50%);
 }
 
-.container-slider {
+.block-slider {
   position: relative;
-  height: 95px;
-  width: 90%;
-  overflow: hidden;
-  margin: 0 auto 65px auto;
-  padding: 0 5%;
+}
+
+.container-slider {
+  margin: 0 0 65px 0;
 }
 
 .list-slider {
@@ -577,7 +576,7 @@ label .filter__check:checked + .radio {
   position: relative;
 }
 
-.arrow {
+.owl-theme .owl-controls .owl-buttons div {
   width: 31px;
   height: 31px;
   cursor: pointer;
@@ -585,10 +584,23 @@ label .filter__check:checked + .radio {
   top: 50%;
   margin: -15px 0 0 0;
 }
+.owl-theme .owl-controls .owl-buttons div:first-child {
+  background: #9b9a9b url(../images/arrow.png) no-repeat center;
+  left: -30px;
+}
+.owl-theme .owl-controls .owl-buttons div:last-child {
+  background: #9b9a9b url(../images/arrow.png) no-repeat center;
+  transform: rotate(180deg);
+  right: -30px;
+}
+
+.owl-pagination {
+  display: none;
+}
 
 .item-slider {
   float: left;
-  width: 180px;
+  width: 200px;
   height: 95px;
 }
 
@@ -610,17 +622,6 @@ label .filter__check:checked + .radio {
 
 .item-slider5 {
   background: url(../images/slider-item/sl-item5.png) no-repeat center;
-}
-
-.arrow-left {
-  background: #9b9a9b url(../images/arrow.png) no-repeat center;
-  left: 0;
-}
-
-.arrow-right {
-  background: #9b9a9b url(../images/arrow.png) no-repeat center;
-  transform: rotate(180deg);
-  right: 0;
 }
 
 .contaioner-team {

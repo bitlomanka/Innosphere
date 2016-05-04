@@ -1,18 +1,14 @@
-.parallax-container{
-    background: rgba(35, 32, 32, 0.6) url(../images/parallax.png) no-repeat 50% 0 fixed;
-    background-size: cover;
-    height: 500px;
-}
 
 .parallax-container{
     margin: 0 0 100px 0;
+    background-size: cover;
+}
+
+.imageHolder{
+    height: 500px;
     .wrapper__inner{
         display: table;
-        .load-more{
-            float: none;
-            margin: 0 auto;
-        }
-    }
+    }  
 }
 
 .block-text-parallax{
@@ -21,6 +17,10 @@
     display: table-cell;
     width: 100%;
     vertical-align: middle;
+    .load-more{
+        float: none;
+        margin: 0 auto;
+    }
 }
 
 .title-parallax{

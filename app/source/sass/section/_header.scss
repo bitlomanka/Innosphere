@@ -1,9 +1,10 @@
 
 
 .header{
-    background: url(../images/header-bg.png) no-repeat center;
+    background: url(../images/header-bg.png) no-repeat;
     height: 785px;
     margin: 0 0 40px 0;
+    background-size: cover;
 }
 
 .header-top-block{
@@ -144,6 +145,7 @@
     left: 2%;
     bottom: 0;
     @extend %letter-spacing;
+    width: 315px;
 }
 
 .search_field{
@@ -153,7 +155,7 @@
     padding:0 30px;
     font: 17px 'open_sanssemibold';
     height: 55px;
-    min-width: 200px;
+    width: 200px;
 }
 
 input[type="search"]::-webkit-input-placeholder {

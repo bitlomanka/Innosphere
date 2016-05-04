@@ -1,10 +1,9 @@
-.container-slider{
+.block-slider{
     position: relative;
-    height: 95px;
-    width: 90%;
-    overflow: hidden;
-    margin: 0 auto 65px auto;
-    padding: 0 5%;
+}
+
+.container-slider{
+    margin: 0 0 65px 0;
 }
 
 .list-slider{
@@ -13,18 +12,31 @@
     position: relative;
 }
 
-.arrow{
+.owl-theme .owl-controls .owl-buttons div{
     width: 31px;
     height: 31px;
     cursor: pointer;
     position: absolute;
     top: 50%;
     margin: -15px 0 0 0;
+    &:first-child{
+        background: #9b9a9b url(../images/arrow.png) no-repeat center;
+        left: -30px;
+    }
+    &:last-child{
+        background: #9b9a9b url(../images/arrow.png) no-repeat center;
+        transform: rotate(180deg);
+        right: -30px;
+    }
+}
+
+.owl-pagination{
+    display: none;
 }
 
 .item-slider{
     float: left;
-    width: 180px;
+    width: 200px;
     height: 95px;
 }
 
@@ -46,15 +58,4 @@
 
 .item-slider5{
     background: url(../images/slider-item/sl-item5.png) no-repeat center;
-}
-
-.arrow-left{
-    background: #9b9a9b url(../images/arrow.png) no-repeat center;
-    left: 0;
-}
-
-.arrow-right{
-    background: #9b9a9b url(../images/arrow.png) no-repeat center;
-    transform: rotate(180deg);
-    right: 0;
 }
