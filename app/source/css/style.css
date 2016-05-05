@@ -483,6 +483,10 @@ label .filter__check:checked + .radio {
   margin: 0 0 105px 0;
 }
 
+.block-parallax {
+  position: relative;
+}
+
 .parallax-container {
   margin: 0 0 100px 0;
   background-size: cover;
@@ -491,16 +495,16 @@ label .filter__check:checked + .radio {
 .imageHolder {
   height: 500px;
 }
-.imageHolder .wrapper__inner {
-  display: table;
-}
 
 .block-text-parallax {
+  width: 91%;
+  max-width: 1000px;
   color: #fff;
   text-align: center;
-  display: table-cell;
-  width: 100%;
-  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .block-text-parallax .load-more {
   float: none;
@@ -509,7 +513,6 @@ label .filter__check:checked + .radio {
 
 .title-parallax {
   font: 50px 'open_sansextrabold';
-  margin: 0 0 50px 0;
 }
 
 .text-parallax {
@@ -553,6 +556,7 @@ label .filter__check:checked + .radio {
   position: relative;
   border-radius: 50%;
   overflow: hidden;
+  transform: translateX(0);
 }
 
 .ava {

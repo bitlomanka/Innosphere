@@ -90,7 +90,7 @@ $(document).ready(function(){
     $('.img-holder').imageScroll({
         holderMinHeight: 500,
         holderMaxHeight: 500,
-        speed: 0.4
+        speed: 0.3
     });
     
 });
