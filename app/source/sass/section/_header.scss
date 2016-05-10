@@ -5,24 +5,48 @@
     height: 785px;
     margin: 0 0 40px 0;
     background-size: cover;
+    @include media("max-width: 700px") {
+        height: 600px;
+    }
 }
 
 .header-top-block{
     background: #fff;
     padding-top: 65px;
     overflow: hidden;
+    @include media("max-width: 960px") {
+        padding-top: 40px;
+    }
+    @include media("max-width: 700px") {
+        padding-top: 10px;
+    }
 }
 
 .contact{
     float: right;
     width: 52%;
+    min-width: 520px;
     margin:0 4.5% 25px -3.9%;
     @extend %letter-spacing;
+    @include media("max-width: 700px") {
+        min-width: 0;
+        width: 40%;
+        margin: 0 2% 0;
+    }
+    @include media("max-width: 480px") {
+        float: none;
+        width: 70%;
+        margin: 0 auto;
+    }
 }
 
 .contact_item{
     @extend %inline-block;
     margin-left: 3.9%;
+    @include media("max-width: 700px") {
+        margin: 0 0 10px; 
+        display: block;
+    }
 }
 
 .contact_title{
@@ -49,17 +73,49 @@
 .container-navigation{
     background: #232020;
     @extend %clearfix;
+    position: relative;
+}
+
+.mobile-navigation{
+    
+    height: 53px;
+    width: 60px;
+    overflow: hidden;
+    float: left;
+    margin: 0 0 0 5px;
+    cursor: pointer;
+    background: url(../images/mobile-navigation.png) no-repeat center;
+    display: none;
+    @include media("max-width: 700px") {
+        display: block;
+    }
 }
 
 .navigation{
     @extend %letter-spacing;
-    width: 80%;
+    width: 85%;
     float: left;
+    @include media("max-width: 700px") {
+        width: 50%;
+        background: #232020;
+        position: absolute;
+        top: 53px;
+        left: 0;
+        z-index: 3;
+        display: none;
+    }
 }
 
 .navigation_item{
     @extend %inline-block;
     margin: 0 1.5%;
+    @include media("max-width: 960px") {
+        margin: 0;
+    }
+    @include media("max-width: 700px") {
+        display: block;
+        margin: 0  5% 0 5%;
+    }
 }
 
 .navigation_link{
@@ -68,6 +124,16 @@
     font: 13px 'open_sanssemibold';
     color: #fff;
     padding: 17px 9px;
+    word-wrap: break-word;
+    &:hover{
+        color: #f17398;
+    }
+    @include media("max-width: 960px") {
+        padding: 17px 7px;
+    }
+    @include media("max-width: 700px") {
+        padding: 13px 7px;
+    }
 }
 
 .navigation__link_active{
@@ -113,12 +179,25 @@
     position: absolute;
     top: 50%;
     left: 2%;
+    @include media("max-width: 700px") {
+        width: 80%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    @include media("max-width: 480px") {
+        width: 90%;
+        background: #fff;
+    }
 }
 
 .title_header{
     font: 22px 'open_sanssemibold';
     color: #2f343a;
     margin: 0 0 15px;
+    @include media("max-width: 480px") {
+        text-align: center;
+        font: 18px 'open_sanssemibold';
+    }
 }
 
 .text_header{

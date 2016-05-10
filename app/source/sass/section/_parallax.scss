@@ -28,9 +28,26 @@
 
 .title-parallax{
     font: 50px 'open_sansextrabold';
+    @include media("max-width: 960px") {
+        font-size: 40px;
+    }
+    @include media("max-width: 700px") {
+        font-size: 35px;
+    }
+    @include media("max-width: 480px") {
+        font-size: 25px;
+        margin: 0 0 10px;
+    }
 }
 
 .text-parallax{
     font: 18px/35px 'open_sanslight';
     margin: 0 0 60px 0;
+    @include media("max-width: 700px") {
+        font: 16px/30px 'open_sanslight';
+        margin: 0 0 40px 0;
+    }
+    @include media("max-width: 480px") {
+        line-height: 25px; 
+    }
 }

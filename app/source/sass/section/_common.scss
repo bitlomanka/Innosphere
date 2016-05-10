@@ -1,3 +1,9 @@
+@mixin media($query) {
+  @if $query {
+    @media only screen and (#{$query}) { @content; }
+  }
+}
+
 %letter-spacing{
     letter-spacing: -0.3em;
 }
@@ -61,17 +67,19 @@ html, body {
     min-height: 100%;
     padding-bottom: 346px;
     box-sizing: border-box;
+    @include media("max-width: 960px") {
+        padding-bottom: 100px;
+    }
 }
+
 
 .wrapper__inner{
     max-width: 1060px;
-//    min-width: 960px;
     padding: 0 30px;
     box-sizing: border-box;
     margin: 0 auto;
     position: relative;
     height: 100%;
-//    overflow: hidden;
 }
 
 .pink-button{
@@ -87,5 +95,6 @@ html, body {
 .content{
     margin: 0 0 119px;
 }
+
 
 

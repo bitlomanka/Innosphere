@@ -6,6 +6,11 @@
     margin-top: -346px;
     text-align: center;
     padding: 135px 0 0 0;
+    @include media("max-width: 960px") {
+        min-height: 200px;
+        padding: 60px 0 0 0;
+        margin-top: -60px;
+    }
 }
 
 .footer-social-list{

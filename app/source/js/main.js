@@ -20,7 +20,8 @@ $(document).ready(function(){
 
     // select2
     $('.filter_select').select2({
-        minimumResultsForSearch: -1
+        minimumResultsForSearch: -1,
+        width: '100%'
     });
     
     // photo hover
@@ -88,9 +89,23 @@ $(document).ready(function(){
     // parallax
     
     $('.img-holder').imageScroll({
-        holderMinHeight: 500,
+        holderMinHeight: 400,
         holderMaxHeight: 500,
         speed: 0.3
+    });
+    
+    // mobile-navigation
+    
+    $('.mobile-navigation').on("click", function(e){
+        e.stopPropagation();
+        var menu = $('.container-navigation').find('.navigation');
+        
+        if(menu.is(":hidden")){
+            menu.slideDown(400);
+        }else{
+            menu.slideUp(400);
+
+        }
     });
     
 });

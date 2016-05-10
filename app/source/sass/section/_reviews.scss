@@ -2,15 +2,31 @@
     width: 100%;
     @extend %letter-spacing;
     margin: 0 0 158px 0;
+    @include media("max-width: 960px") {
+        margin-bottom: 110px;
+    }
+    @include media("max-width: 700px") {
+        margin-bottom: 70px;
+    }
 }
 
 .block-reviews{
-    width: 42%;
+    box-sizing: border-box;
+    width: 50%;
     @extend %inline-block;
     padding: 25px 0 0 8%;
     background: url(../images/icon2.png) no-repeat left top;
     &:first-child{
         background: url(../images/icon1.png) no-repeat left top;  
+    }
+    @include media("max-width: 700px") {
+        padding-left: 15%;
+        width: 100%;
+        margin: 0 0 50px;
+    }
+    @include media("max-width: 480px") {
+        padding: 60px 0 0 0;
+        text-align: center;
     }
 }
 
@@ -19,6 +35,12 @@
     color: #adafb0;
     margin: 0 0 25px;
     word-wrap: break-word;
+    @include media("max-width: 960px") {
+        margin-left: 5%;
+    }
+    @include media("max-width: 480px") {
+        margin: 0 0 10px;
+    }
 }
 
 .author-reviews{
@@ -27,6 +49,9 @@
     float: left;
     width: 78%;
     padding: 35px 0 0 0;
+    @include media("max-width: 960px") {
+        width: 60%;
+    }
 }
 
 .container-avatar{

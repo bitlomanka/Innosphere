@@ -1,12 +1,22 @@
 .contaioner-team{
     @extend %letter-spacing;
     margin: 0 0 0 -2.7%;
+    @include media("max-width: 480px") {
+        margin: 0;
+    }
 }
 
 .block-team{
     @extend %inline-block;
     width: 30.6%;
     margin: 0 0 150px 2.7%;
+    overflow: hidden;
+    @include media("max-width: 700px") {
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin-bottom: 100px;
+    }
 }
 
 .container-photo-team{
@@ -16,6 +26,15 @@
     position: relative;
     box-sizing: border-box;
     margin: 0 0 13px 0;
+    @include media("max-width: 700px") {
+        width: 49%;
+        padding: 32% 0 0 0;
+        margin: 0 auto 13px auto;
+    }
+    @include media("max-width: 480px") {
+        width: 78%;
+        padding: 50% 0 0 0;
+    }
 }
 
 .photo-team{
@@ -46,6 +65,11 @@
     max-height: 60px;
     text-overflow: ellipsis;
     overflow: hidden;
+    @include media("max-width: 700px") {
+        width: 86%;
+        margin: 0 auto 50px auto;
+    }
+    
 }
 
 .social-team-list{
@@ -91,4 +115,7 @@
     background-color: #CCC;
     border-top: 7px solid #efefef;
     margin: 0 0 88px 0;
+    @include media("max-width: 960px") {
+        height: 350px;
+    }
 }

@@ -59,6 +59,12 @@ gulp.task('fonts', function () {
   return gulp.src('app/source/fonts/**/*.*')
     .pipe(gulp.dest('app/build/css'));
 });
+
+// php
+gulp.task('php', function () {
+   gulp.src('app/source/php/*.*')
+    .pipe(gulp.dest('app/build/php'));
+});
     
 // сервер dev
 gulp.task('devServer', function () {  
@@ -88,9 +94,9 @@ gulp.task('watch', function () {
 
 
 // сборка
-gulp.task('build', ['html', 'images', 'fonts'], function(){
+gulp.task('build', ['html', 'images', 'fonts', 'php'], function(){
     gulp.start('server');
 });
 
 // таск по умолчанию
-gulp.task('default', ['jade', 'compass', 'devServer', 'watch']);
+gulp.task('default', ['jade', 'compass', 'devServer', 'watch', 'php']);

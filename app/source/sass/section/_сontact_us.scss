@@ -4,11 +4,18 @@
 
 .block-contact{
     @extend %inline-block;
+    @include media("max-width: 700px") {
+        display: block;
+    }
 }
 
 .block-form-contact{
     width: 62.5%;
     font: 18px 'open_sanslight';
+    @include media("max-width: 700px") {
+        width: 100%;
+        margin: 0 0 100px;
+    }
 }
 
 .block-input{
@@ -20,6 +27,10 @@
     float: left;
     margin: 0 0 0 2.3%;
     &:first-child{
+        margin: 0;
+    }
+    @include media("max-width: 480px") {
+        width: 100%;
         margin: 0;
     }
 }
@@ -52,14 +63,16 @@
 }
 
 .submit{
-    width: 29.12%;
+    width: 182px;
     font-size: 18px;
 }
 
 .address-bottom{
     width: 31%;
     margin: 0 0 0 6.5%;
-    
+    @include media("max-width: 700px") {
+        width: 90%;
+    }
 }
 
 .title-address{
@@ -77,6 +90,7 @@
 
 .contact-title-bottom{
     width: 25.5%;
+    min-width: 73px;
     @extend %inline-block;
     font: 17px 'open_sanssemibold';
     color: #0b0e11;
