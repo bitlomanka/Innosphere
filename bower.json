@@ -5,6 +5,7 @@
     "normalize-css": "latest",
     "select2": "latest",
     "Parallax-ImageScroll": "latest",
-    "OwlCarousel": "latest"
+    "OwlCarousel": "latest",
+    "picturefill": "latest"
   }
 }

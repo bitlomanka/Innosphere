@@ -104,11 +104,12 @@ $(document).ready(function(){
             menu.slideDown(400);
         }else{
             menu.slideUp(400);
-
         }
     });
     
+    
 });
+document.createElement( "picture" );
 
 
 

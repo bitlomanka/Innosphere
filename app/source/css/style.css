@@ -89,7 +89,7 @@ html, body {
 }
 
 .header {
-  background: url(../images/header-bg.png) no-repeat;
+  background: url(../images/header-bg.png) no-repeat center;
   height: 785px;
   margin: 0 0 40px 0;
   background-size: cover;
@@ -556,6 +556,14 @@ label .filter__check:checked + .radio {
     margin-bottom: 10px;
   }
 }
+.link_presentation_img img {
+  height: auto;
+}
+@media only screen and (max-width: 480px) {
+  .link_presentation_img img {
+    min-width: 100%;
+  }
+}
 
 .presentation_img_row-1 {
   width: 28.2%;
@@ -614,16 +622,21 @@ label .filter__check:checked + .radio {
 }
 
 .small-image {
-  padding-top: 190px;
+  height: 190px;
   margin: 0 0 10px;
 }
 
 .large-image {
-  padding-top: 390px;
+  height: 390px;
+}
+@media only screen and (max-width: 700px) {
+  .large-image {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 480px) {
   .large-image {
-    padding-top: 190px;
+    height: 190px;
   }
 }
 
@@ -959,11 +972,21 @@ label .filter__check:checked + .radio {
 }
 
 .social-team-list {
-  margin: 0 0 0 -3.4%;
+  margin: 0 0 0 -4.4%;
+}
+@media only screen and (max-width: 960px) {
+  .social-team-list {
+    margin: 0 0 0 -1%;
+  }
 }
 
 .social-team-item {
   margin: 0 0 0 4.4%;
+}
+@media only screen and (max-width: 960px) {
+  .social-team-item {
+    margin: 0 0 0 1%;
+  }
 }
 
 .social-team-link {

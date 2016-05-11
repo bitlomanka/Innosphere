@@ -74,12 +74,18 @@
 
 .social-team-list{
     @extend %letter-spacing;
-    margin: 0 0 0 -3.4%;
+    margin: 0 0 0 -4.4%;
+    @include media("max-width: 960px") {
+        margin: 0 0 0 -1%;
+    }
 }
 
 .social-team-item{
     @extend %inline-block;
     margin: 0 0 0 4.4%;
+    @include media("max-width: 960px") {
+        margin: 0 0 0 1%;
+    }
 }
 
 .social-team-link{

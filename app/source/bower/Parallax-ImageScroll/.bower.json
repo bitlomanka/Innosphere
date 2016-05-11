@@ -24,7 +24,6 @@
     "commit": "76d0bfd50679e8d6b18bfbc94c62050cc4e81a2e"
   },
   "_source": "https://github.com/pederan/Parallax-ImageScroll.git",
-  "_target": "~0.2.3",
-  "_originalSource": "Parallax-ImageScroll",
-  "_direct": true
+  "_target": "*",
+  "_originalSource": "Parallax-ImageScroll"
 }
