@@ -557,6 +557,10 @@ label .filter__check:checked + .radio {
   }
 }
 .link_presentation_img img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
   height: auto;
 }
 @media only screen and (max-width: 480px) {

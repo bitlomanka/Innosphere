@@ -6,6 +6,6 @@
     "select2": "latest",
     "Parallax-ImageScroll": "latest",
     "OwlCarousel": "latest",
-    "picturefill": "latest"
+    "picturefill": "~3.0.2"
   }
 }
