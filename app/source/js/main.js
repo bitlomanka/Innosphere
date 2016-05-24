@@ -43,9 +43,6 @@ $(document).ready(function(){
     // validate
     
     $('.write-us').validate({
-        submitHandler: function(form) {
-            $(form).ajaxSubmit();
-        },
         rules: {
             first_user_name:{
                 required: true,
@@ -83,6 +80,17 @@ $(document).ready(function(){
                 digits: 'Phone number must contain only digits'
             },
             message:'Enter your message'
+        },
+        submitHandler: function(form){
+            $.ajax({
+                type: "POST",
+                url: 'php/index.php',
+                data: $(form).serialize(),
+                cache: false,
+                success: function(data){
+                    alert(data);
+                }
+            })
         }
     });
     
