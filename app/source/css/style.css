@@ -1077,7 +1077,7 @@ label .filter__check:checked + .radio {
 }
 @media only screen and (max-width: 960px) {
   .text-field {
-    background: #f3f1f1;
+    background: #f3f3f5;
   }
 }
 
@@ -1096,7 +1096,7 @@ label .filter__check:checked + .radio {
 }
 @media only screen and (max-width: 960px) {
   .message {
-    background: #f3f1f1;
+    background: #f3f3f5;
   }
 }
 
